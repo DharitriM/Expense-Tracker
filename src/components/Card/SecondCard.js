@@ -16,7 +16,7 @@ export default function SecondCard(props) {
 
   const updateExpense = (id, updatedTitle, updatedAmount) => {
 
-    const updatedExpenses = expense.map((item) => {
+    const updatedExpenses = expense?.map((item) => {
       if (item.id === id) {
         return {
           ...item,

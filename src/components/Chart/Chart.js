@@ -8,7 +8,7 @@ export default function Chart(props) {
     const max = Math.max(...dataValues);
   return (
     <div className='chart'>
-      {props.dataBar.map((item)=>{
+      {props.dataBar?.map((item)=>{
         return <ChartBar
         key={item.label}
         value={item.value}
