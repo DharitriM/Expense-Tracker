@@ -4,3 +4,5 @@ This is a expense tracker which will help to track the daily expenses so as to m
 To start:
 npm install
 npm start
+
+live: https://expense-tracker-gilt-pi.vercel.app/
