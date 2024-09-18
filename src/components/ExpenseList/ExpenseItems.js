@@ -23,7 +23,6 @@ export default function ExpenseItems(props) {
     props.updateExpense(props.id, updatedTitle, updatedAmount);
     setIsUpdate(false);
   };
-  console.log(props.id, updatedTitle, updatedAmount);
 
   const handleCancelUpdate = () => {
     setIsUpdate(false);

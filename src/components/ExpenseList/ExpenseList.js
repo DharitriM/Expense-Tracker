@@ -1,6 +1,7 @@
 import React from "react";
 import "../Card/SecondCard.css";
 import ExpenseItems from "./ExpenseItems";
+
 export default function ExpenseList(props) {
   return (
     <div className="expenses-list">
@@ -11,7 +12,7 @@ export default function ExpenseList(props) {
               <ExpenseItems
                 id={index}
                 updateExpense={props.updateExpense}
-                key={item.index}
+                key={index}
                 title={item.title}
                 amount={item.amount}
                 date={item.date}
@@ -25,7 +26,7 @@ export default function ExpenseList(props) {
               <ExpenseItems
                 id={index}
                 updateExpense={props.updateExpense}
-                key={item.index}
+                key={index}
                 title={item.title}
                 amount={item.amount}
                 date={item.date}

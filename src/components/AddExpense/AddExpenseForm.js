@@ -72,7 +72,6 @@ export default function AddExpenseForm(props) {
           date: new Date(date),
         };
         props.setInputData(inputData);
-        console.log(inputData);
         setTitle("");
         setAmount("");
         setDate("");
@@ -85,8 +84,9 @@ export default function AddExpenseForm(props) {
     <div>
       <form onSubmit={handleSubmit}>
         <div className="new-expense__controls">
+          <h2>Expense Details</h2>
           <div className="new-expense__control">
-            <label>Add Expense Title</label>
+            <label>Expense Title</label>
             {props.isUpdate ? (
               <div>
                 <input
@@ -108,7 +108,7 @@ export default function AddExpenseForm(props) {
             )}
           </div>
           <div className="new-expense__control">
-            <label>Add Expense Amount</label>
+            <label>Expense Amount</label>
             {props.isUpdate ? (
               <div>
                 <input
@@ -134,13 +134,13 @@ export default function AddExpenseForm(props) {
             )}
           </div>
           <div className="new-expense__control">
-            <label>Add Expense Date</label>
+            <label>Expense Date</label>
             <div>
               <input type="date" onChange={handleDate}></input>
               {dateError && <span className="error">{dateError}</span>}
             </div>
           </div>
-          <div className="new-expense__control">
+          <div className="new-expense__actions">
             <button
               onClick={() => {
                 props.clear();

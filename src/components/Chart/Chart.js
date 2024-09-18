@@ -4,7 +4,6 @@ import ChartBar from './ChartBar'
 
 export default function Chart(props) {
     const dataValues = props.dataBar.map((data)=>data.value);
-    console.log(dataValues);
     const max = Math.max(...dataValues);
   return (
     <div className='chart'>
